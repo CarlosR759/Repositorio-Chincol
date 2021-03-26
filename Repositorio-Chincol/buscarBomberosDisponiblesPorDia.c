@@ -1,0 +1,6 @@
+buscarBomberosDisponiblesPorDia(char *dia){
+
+
+
+    return;
+}

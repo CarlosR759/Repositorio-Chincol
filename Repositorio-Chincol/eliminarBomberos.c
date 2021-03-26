@@ -1,0 +1,5 @@
+eliminarBomberos(char *rut){
+
+
+    return;
+}

@@ -1,0 +1,6 @@
+buscarBomberosPorRut(char *rut){
+
+
+
+    return;
+}
