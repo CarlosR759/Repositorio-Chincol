@@ -1,0 +1,26 @@
+Este es un archivo breve para señalar y generar consensos a la hora de programar en replit conjunto con github, y no pasara llevar el código de otra persona en el intento.
+
+La idea es que sepan que pueden ver y editar todos los archivos. Es probable que mientras estemos haciendo la tarea tengamos que eliminar códigos de otras partes o bien corregir para que nuestra seccción funcione.
+
+La idea es que no se borre nada sin el consentimiento de todo el equipo de trabajo. Entonces les recomiendo que hagamos los siguiente. Si se desea borar o bien editar una sección de un código del cual no está dentro de su diligencia personal, pero necesita editar, entonces mejor comente las secciones que dejaron el resto de las personas para que no se pierda el código.
+
+Ejemplos:
+
+1)
+
+#include <stdio.h>
+
+int main(void){
+    /*
+    printf("Este código no funciona :c \n)
+    */
+
+    //Nicolas: Carlos te falto el ; al final.
+    printf("Este código no funciona :C \n);
+
+    return 0;
+}
+
+El siguiente código es pequeño y absurdo para que se entienda la idea mejor. La gracia es que cumplan con el formato entregado en el código anterior. Se comenta con /*  */ toda la sección que no se quiere procesar en el programa y se agrega la nueva con el nombre de la persona que modificó.
+
+Si necesitamos más reglas para programar las podemas dejar escritas por aquí. Si se les ocurre alguna otra anímense a escribirlas por el char !!
