@@ -4,7 +4,7 @@ La idea es que sepan que pueden ver y editar todos los archivos. Es probable que
 
 La idea es que no se borre nada sin el consentimiento de todo el equipo de trabajo. Entonces les recomiendo que hagamos los siguiente. Si se desea borar o bien editar una sección de un código del cual no está dentro de su diligencia personal, pero necesita editar, entonces mejor comente las secciones que dejaron el resto de las personas para que no se pierda el código.
 
-Ejemplos:
+Ejemplo:
 
 1)
 
@@ -15,6 +15,9 @@ int main(void){
     printf("Este código no funciona :c \n)
     */
 
+    //Nicolas: Carlos te falto el ; al final.
+    printf("Este código no funciona :C \n);
+    
     //Nicolas: Carlos te falto el ; al final.
     printf("Este código no funciona :C \n);
 
