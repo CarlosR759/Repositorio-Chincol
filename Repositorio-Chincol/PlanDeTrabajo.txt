@@ -1,1 +1,15 @@
 Este documento es con el fín de dejar explicitado como vamos a enfrentar el problema y que es lo que se debe hacer primero y luego despues.
+
+hay que realizar las siguientes funciones, la idea es hacerlas secuencialmente en el orden que corresponden ya que sin alguna previa hecha, la otra se puede implementar a medias o no se puede implementar. Por favor eliján una función que quieran implementar  y hacerse cargo. En caso de estar listo su función por favor poner "listo" al lado del titulo de la función.
+
+0)Menu. Carlos
+1)importar Bomberos Nicolas 
+2)agregar Bomberos.
+3)Elimnar Bomberos
+4)Buscar Bomberos Diponibles por día
+5)Buscar Bomberos por Rut.
+6)Modificar disponibilidad de un Bomberos
+7)Crear horario semanal
+8)Mostar horario de la semanal
+9)Mostrat todos los bomberos por estación
+

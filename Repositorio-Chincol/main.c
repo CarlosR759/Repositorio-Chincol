@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 typedef struct{
   char* rut;
   char* nombre;
   int disponibilidad[7];
 }Bombero;
+
 int main(void){
     importarBomberosDesdeUnArchivo("info_Bomberos.txt");
     int opcion, i;
@@ -23,6 +25,13 @@ int main(void){
     while(opcion<0 || opcion>9){
       scanf("%d", &opcion);
     }
+
+
+
+
+
+
+
     switch(opcion){
       case 1: scanf("%s %s", b->rut, b->nombre);
               for(i = 0; i < 7; i++){
