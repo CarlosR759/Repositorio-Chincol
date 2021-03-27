@@ -7,31 +7,40 @@ typedef struct{
   int disponibilidad[7];
 }Bombero;
 
+void menu(int *opcion);
+
 int main(void){
-    importarBomberosDesdeUnArchivo("info_Bomberos.txt");
-    int opcion, i;
-    Bombero *b = (Bombero*)malloc(sizeof(Bombero));
-    printf("Estación de bomberos\n");
-    printf("1. Agregar Bombero\n");
-    printf("2. Despedir Bombero\n");
-    printf("3. Buscar Bombero por día\n");
-    printf("4. Buscar Bombero por Rut\n");
-    printf("5. Modificar disponibilidad de un Bombero\n");
-    printf("6. Crear horario de la semana\n");
-    printf("7. Mostrar horario de la semana\n");
-    printf("8. Mostrar todods los Bomberos\n");
-    printf("0. Salir\n");
-    scanf("%d", &opcion);
-    while(opcion<0 || opcion>9){
-      scanf("%d", &opcion);
-    }
+    int opcion = 0, i = 0;
+
+    do{
+        menu(&opcion);
+        if(opcion == 0) break;
+        if(opcion == 1) printf("opcion 1\n");
+        if(opcion == 2) printf("opcion 2\n");
+        if(opcion == 3) printf("opcion 3\n");
+        if(opcion == 4) printf("opcion 4\n");
+        if(opcion == 5) printf("opcion 5\n");
+        if(opcion == 6) printf("opcion 6\n");
+        if(opcion == 7) printf("opcion 7\n");
+        if(opcion == 8) printf("opcion 8\n");
+
+        printf("\n\n");
+    }while(opcion != 0);
+
+
+
+
+
+    //Bombero *b = (Bombero*)malloc(sizeof(Bombero));
+   
+    //importarBomberosDesdeUnArchivo("info_Bomberos.txt");
 
 
 
 
 
 
-
+/*
     switch(opcion){
       case 1: scanf("%s %s", b->rut, b->nombre);
               for(i = 0; i < 7; i++){
@@ -57,7 +66,7 @@ int main(void){
       break;
     }
 
-    
+ */   
 
 
 
