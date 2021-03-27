@@ -8,21 +8,31 @@ typedef struct{
 }Bombero;
 
 void menu(int *opcion);
+//Bombero *agregarBombero(char *rut, char *nombre, int disponibilidad[] ){
+//void eliminarBomberos(char *rut){
+//void buscarBomberosDisponiblesPorDia(char *dia){
+//void buscarBomberosPorRut(char *rut){
+//void modificarDisponibilidadDeUnBombero(char *rut, int disponibilidad[] ){
+//void crearHorarioSemanal(void){
+//void mostrarHorarioDeLaSemana(void ){
+//void mostrarTodosLosBomberosDeLaEstacion(void ){
+
 
 int main(void){
     int opcion = 0, i = 0;
+    Bombero *vector = NULL;
 
     do{
         menu(&opcion);
         if(opcion == 0) break;
-        if(opcion == 1) printf("opcion 1\n");
-        if(opcion == 2) printf("opcion 2\n");
-        if(opcion == 3) printf("opcion 3\n");
-        if(opcion == 4) printf("opcion 4\n");
-        if(opcion == 5) printf("opcion 5\n");
-        if(opcion == 6) printf("opcion 6\n");
-        if(opcion == 7) printf("opcion 7\n");
-        if(opcion == 8) printf("opcion 8\n");
+        //if(opcion == 1) agregarBombero();
+        //if(opcion == 2) eliminarBombero(); 
+        //if(opcion == 3) buscarBomberosDisponiblePorDia();  
+        //if(opcion == 4) buscarBomberosPorRut(); 
+        //if(opcion == 5) modificarDisponibilidadDeUnBombero(); 
+        //if(opcion == 6) crearHorarioSemanal();
+        //if(opcion == 7) mostrarHorarioDelaSemana(); 
+        //if(opcion == 8) mostrarTodosLosBomberos();
 
         printf("\n\n");
     }while(opcion != 0);
