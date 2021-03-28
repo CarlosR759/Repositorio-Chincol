@@ -11,5 +11,5 @@ hay que realizar las siguientes funciones, la idea es hacerlas secuencialmente e
 6)Modificar disponibilidad de un Bomberos
 7)Crear horario semanal
 8)Mostar horario de la semanal
-9)Mostrat todos los bomberos por estación
+9)Mostrar todos los bomberos por estación
 
