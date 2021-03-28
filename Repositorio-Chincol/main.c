@@ -8,6 +8,7 @@ typedef struct{
 }Bombero;
 
 void menu(int *opcion);
+void importarBomberosDesdeUnArchivo(char *);
 //Bombero *agregarBombero(char *rut, char *nombre, int disponibilidad[] ){
 //void eliminarBomberos(char *rut){
 //void buscarBomberosDisponiblesPorDia(char *dia){
@@ -22,7 +23,11 @@ int main(void){
     int opcion = 0, i = 0;
     Bombero *vector = NULL;
 
-    //Hola :)
+
+
+
+    importarBomberosDesdeUnArchivo("bomberos.csv");
+
     do{
         menu(&opcion);
         if(opcion == 0) break;
