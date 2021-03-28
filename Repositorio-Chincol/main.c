@@ -22,7 +22,7 @@ int main(void){
     int opcion = 0, i = 0;
     Bombero *vector = NULL;
 
-    //NICOLAS ESTE ES UN MENSAJE PARA TI :) //
+    //Hola :)
     do{
         menu(&opcion);
         if(opcion == 0) break;
