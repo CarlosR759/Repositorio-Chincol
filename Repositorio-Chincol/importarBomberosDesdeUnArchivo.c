@@ -8,7 +8,7 @@ typedef struct{
   int disponibilidad[7];
 }Bombero;
 
-Bombero *copiarCadena(char *fuente, Bombero *vector, unsigned long long j){
+Bombero *copiarCadena(Bombero *b, Bombero *vector, unsigned long long j){
 
 char *get_csv_field (char * tmp, int k) {
     int open_mark = 0;
