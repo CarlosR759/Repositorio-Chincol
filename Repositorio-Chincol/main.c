@@ -8,7 +8,7 @@ typedef struct{
 }Bombero;
 
 void menu(int *opcion);
-void importarBomberosDesdeUnArchivo(char *);
+Bombero *importarBomberosDesdeUnArchivo(char *, unsigned long long *talla);
 //Bombero *agregarBombero(char *rut, char *nombre, int disponibilidad[] ){
 //void eliminarBomberos(char *rut){
 //void buscarBomberosDisponiblesPorDia(char *dia){
@@ -21,12 +21,13 @@ void importarBomberosDesdeUnArchivo(char *);
 
 int main(void){
     int opcion = 0, i = 0;
+    unsigned long long talla;
     Bombero *vector = NULL;
 
 
 
 
-    importarBomberosDesdeUnArchivo("bomberos.csv");
+    vector = importarBomberosDesdeUnArchivo("bomberos.csv", &talla);
 
     do{
         menu(&opcion);
@@ -44,7 +45,7 @@ int main(void){
     }while(opcion != 0);
 
 
-
+    printf("%llu\n", talla);
 
 
     //Bombero *b = (Bombero*)malloc(sizeof(Bombero));

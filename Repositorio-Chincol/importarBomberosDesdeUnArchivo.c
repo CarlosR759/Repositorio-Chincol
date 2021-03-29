@@ -48,16 +48,24 @@ char *get_csv_field (char * tmp, int k) {
     return NULL;
 }
 
-void importarBomberosDesdeUnArchivo(char * bomberos){
+Bombero *importarBomberosDesdeUnArchivo(char * bomberos, unsigned long long *talla){
     FILE *fp = fopen("bomberos.csv","r");
     char linea[1000];
     char *aux;
     Bombero *b =(Bombero*)malloc(sizeof(Bombero));
+    Bombero *vector = NULL;
     b->rut = malloc(10*sizeof(char));
     b->nombre = malloc(100*sizeof(char));
-    int i;
+    int i, j = 0;;
 
     while(fgets (linea, 1000, fp) != NULL){
+        vector = (Bombero *) realloc(vector, (j+1) *sizeof(Bombero) );
+        if(vector == NULL){
+            printf("No hay suficiente espacio en la memoria\n"); exit(1);
+        }
+
+
+        
         for( i = 0; i < 9; i++) {
             if(i==0){
               b->rut = get_csv_field(linea,i);
@@ -129,9 +137,10 @@ void importarBomberosDesdeUnArchivo(char * bomberos){
             }
 
         }
+        j++;
         printf("\n\n");
     }
 
-
-    return;
+    (*talla) = j;
+    return vector;
 }
