@@ -7,7 +7,7 @@ typedef struct{
   int disponibilidad[7];
 }Bombero;
 
-Bombero *copiarCadena(Bombero *b, Bombero *vector, unsigned long long j){
+void copiarCadena(Bombero *b, Bombero *vector, unsigned long long j){
     unsigned long long i = 0, tallaCadena = 0;
 
     vector[j].rut = (char *) malloc(10 * sizeof(char) );
@@ -40,6 +40,5 @@ Bombero *copiarCadena(Bombero *b, Bombero *vector, unsigned long long j){
 
     vector[j].nombre[tallaCadena] = '\0';
 
-
-    return vector;
+    return;
 }

@@ -9,7 +9,7 @@ typedef struct{
 
 void menu(int *opcion);
 Bombero *importarBomberosDesdeUnArchivo(char *, unsigned long long *talla);
-Bombero *copiarCadena(Bombero *b, Bombero *vector, unsigned long long j);
+void copiarCadena(Bombero *b, Bombero *vector, unsigned long long j);
 //Bombero *agregarBombero(char *rut, char *nombre, int disponibilidad[] ){
 //void eliminarBomberos(char *rut){
 //void buscarBomberosDisponiblesPorDia(char *dia){
