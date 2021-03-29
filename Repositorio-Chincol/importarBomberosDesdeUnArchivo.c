@@ -8,6 +8,8 @@ typedef struct{
   int disponibilidad[7];
 }Bombero;
 
+Bombero *copiarCadena(char *fuente, Bombero *vector, unsigned long long j){
+
 char *get_csv_field (char * tmp, int k) {
     int open_mark = 0;
     char* ret=(char*) malloc (100*sizeof(char));
@@ -75,6 +77,7 @@ Bombero *importarBomberosDesdeUnArchivo(char * bomberos, unsigned long long *tal
               b->nombre = get_csv_field(linea,i);
               printf("%s ", b->nombre);
             }
+
             if(i==2){
               aux = get_csv_field(linea,i);
               if(aux[0] == 'S'){
@@ -137,6 +140,10 @@ Bombero *importarBomberosDesdeUnArchivo(char * bomberos, unsigned long long *tal
             }
 
         }
+       
+        //Copiamos rut y nombre a vector. 
+        vector = copiarCadena(b,vector, j);
+ 
         j++;
         printf("\n\n");
     }
