@@ -23,7 +23,7 @@ void copiarCadena(Bombero *b, Bombero *vector, unsigned long long j){
     }
 
     //Se guardar rut//
-    for(i = 0; b->rut[i] ; i++){
+    for(i = 0; b->rut[i]; i++){
         vector[j].rut[i] = b->rut[i];
         tallaCadena++;
     }

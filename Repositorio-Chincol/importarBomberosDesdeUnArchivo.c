@@ -58,7 +58,7 @@ Bombero *importarBomberosDesdeUnArchivo(char * bomberos, unsigned long long *tal
     Bombero *vector = NULL;
     b->rut = malloc(10*sizeof(char));
     b->nombre = malloc(100*sizeof(char));
-    int i, j = 0;;
+    int i, j = 0;
 
     while(fgets (linea, 1000, fp) != NULL){
         vector = (Bombero *) realloc(vector, (j+1) *sizeof(Bombero) );
