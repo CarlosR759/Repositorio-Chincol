@@ -17,7 +17,7 @@ void copiarCadena(Bombero *b, Bombero *vector, unsigned long long j);
 //void modificarDisponibilidadDeUnBombero(char *rut, int disponibilidad[] ){
 //void crearHorarioSemanal(void){
 //void mostrarHorarioDeLaSemana(void ){
-//void mostrarTodosLosBomberosDeLaEstacion(void ){
+void mostrarTodosLosBomberosDeLaEstacion(Bombero *vector, unsigned long long talla){
 
 
 int main(void){

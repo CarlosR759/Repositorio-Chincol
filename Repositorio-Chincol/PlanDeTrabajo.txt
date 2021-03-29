@@ -4,12 +4,12 @@ hay que realizar las siguientes funciones, la idea es hacerlas secuencialmente e
 
 0)Menu. Carlos
 1)importar Bomberos Nicolas 
-2)agregar Bomberos.
-3)Elimnar Bomberos
-4)Buscar Bomberos Diponibles por día
+2)agregar Bomberos.Rocio
+3)Elimnar Bomberos.Nicolas
+4)Buscar Bomberos Diponibles por día José
 5)Buscar Bomberos por Rut.
 6)Modificar disponibilidad de un Bomberos
 7)Crear horario semanal
 8)Mostar horario de la semanal
-9)Mostrar todos los bomberos por estación
+9)Mostrar todos los bomberos por estación Carlos
 
