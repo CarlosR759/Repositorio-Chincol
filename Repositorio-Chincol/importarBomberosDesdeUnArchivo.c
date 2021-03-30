@@ -80,7 +80,7 @@ Bombero *importarBomberosDesdeUnArchivo(char * bomberos, unsigned long long *tal
             if(i==2){
               aux = get_csv_field(linea,i);
               if(aux[0] == 'S'){
-                vector[j].disponibilidad[1] = 1;
+                vector[j].disponibilidad[0] = 1;
               }else vector[j].disponibilidad[0] = 0;
               printf("%d ", vector[j].disponibilidad[0]);
             }

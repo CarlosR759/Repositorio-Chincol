@@ -46,7 +46,7 @@ int main(void){
     }while(opcion != 0);
 
 
-    printf("%llu\n", talla);
+    printf("TOTAL BOMBEROS: %llu\n", talla);
 
 
     //Bombero *b = (Bombero*)malloc(sizeof(Bombero));
