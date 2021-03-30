@@ -10,7 +10,7 @@ typedef struct{
 void menu(int *opcion);
 Bombero *importarBomberosDesdeUnArchivo(char *, unsigned long long *talla);
 void copiarCadena(Bombero *b, Bombero *vector, unsigned long long j);
-//Bombero *agregarBombero(char *rut, char *nombre, int disponibilidad[] ){
+Bombero *agregarBombero(char rut[10], char *nombre, int disponibilidad[] ){
 //void eliminarBomberos(char *rut){
 //void buscarBomberosDisponiblesPorDia(char *dia){
 //void buscarBomberosPorRut(char *rut){
@@ -24,7 +24,7 @@ int main(void){
     int opcion = 0, i = 0;
     unsigned long long talla;
     Bombero *vector = NULL;
-
+    char rut[10];
 
 
 
@@ -32,9 +32,10 @@ int main(void){
 
     do{
         menu(&opcion);
+        getchar();
         if(opcion == 0) break;
         //if(opcion == 1) agregarBombero();
-        //if(opcion == 2) eliminarBombero(); 
+        if(opcion == 2) eliminarBombero(rut,vector,talla); 
         //if(opcion == 3) buscarBomberosDisponiblePorDia();  
         //if(opcion == 4) buscarBomberosPorRut(); 
         //if(opcion == 5) modificarDisponibilidadDeUnBombero(); 

@@ -8,11 +8,13 @@ typedef struct{
     int disponibilidad[7];
 }Bombero;
 
-void eliminarBomberos(char *rut, Bombero *vector, unsigned long long tall){
-
+void eliminarBomberos(char *rut, Bombero *vector, unsigned long long talla){
+  printf("Ingrese rut del bombero a despedir: ");
+  scanf("%[^\n]s", rut);
+  getchar();
     int j, i, n;
     bool encontrado;
-    for( j = 0; j < tall; j++){
+    for( j = 0; j < talla; j++){
         i = 0;
         encontrado = true;
         while(vector[j].rut[i] != '\0' && encontrado){
@@ -22,7 +24,7 @@ void eliminarBomberos(char *rut, Bombero *vector, unsigned long long tall){
             i++;
         }
         if(encontrado){
-            for( n = j; n < tall - 1; n++ ){
+            for( n = j; n < talla - 1; n++ ){
                 for(i = 0; vector[n+1].rut[i]; i++){
                     vector[n].rut[i] = vector[n+1].rut[i];
                 }
@@ -35,7 +37,7 @@ void eliminarBomberos(char *rut, Bombero *vector, unsigned long long tall){
                     vector[n].disponibilidad[i] = vector[n+1].disponibilidad[i];
                 }
             }
-            vector = realloc (vector, (tall-1) * sizeof(Bombero));
+            vector = realloc (vector, (talla-1) * sizeof(Bombero));
             printf("-----------------------\n");
             printf("Bombero eliminado\n");
             printf("-----------------------\n");
