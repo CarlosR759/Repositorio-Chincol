@@ -14,7 +14,7 @@ void mostrarTodosLosBomberosDeLaEstacion(Bombero *vector, unsigned long long tal
         printf("%s  ", vector[i].nombre);
         for(j = 0; j < 7; j++) printf("%d ", vector[i].disponibilidad[j] );
 
-        printf("\n");
+        printf("\n\n");
     }
 
     return;

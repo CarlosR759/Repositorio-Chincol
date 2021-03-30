@@ -17,7 +17,7 @@ void copiarCadena(Bombero *b, Bombero *vector, unsigned long long j);
 //void modificarDisponibilidadDeUnBombero(char *rut, int disponibilidad[] ){
 //void crearHorarioSemanal(void){
 //void mostrarHorarioDeLaSemana(void ){
-//void mostrarTodosLosBomberosDeLaEstacion(Bombero *vector, unsigned long long talla){
+void mostrarTodosLosBomberosDeLaEstacion(Bombero *vector, unsigned long long talla);
 
 
 int main(void){
@@ -40,7 +40,7 @@ int main(void){
         //if(opcion == 5) modificarDisponibilidadDeUnBombero(); 
         //if(opcion == 6) crearHorarioSemanal();
         //if(opcion == 7) mostrarHorarioDelaSemana(); 
-        //if(opcion == 8) mostrarTodosLosBomberos();
+        if(opcion == 8) mostrarTodosLosBomberosDeLaEstacion(vector, talla);
 
         printf("\n\n");
     }while(opcion != 0);
