@@ -67,7 +67,6 @@ Bombero *importarBomberosDesdeUnArchivo(char * bomberos, unsigned long long *tal
         }
 
 
-        
         for( i = 0; i < 9; i++) {
             if(i==0){
               b->rut = get_csv_field(linea,i);
@@ -81,61 +80,61 @@ Bombero *importarBomberosDesdeUnArchivo(char * bomberos, unsigned long long *tal
             if(i==2){
               aux = get_csv_field(linea,i);
               if(aux[0] == 'S'){
-                b->disponibilidad[0] = 1;
-              }else b->disponibilidad[0] = 0;
-              printf("%d ", b->disponibilidad[0]);
+                vector[j].disponibilidad[1] = 1;
+              }else vector[j].disponibilidad[0] = 0;
+              printf("%d ", vector[j].disponibilidad[0]);
             }
             if(i==3){
               aux = get_csv_field(linea,i);
               if(aux[0] == 'S'){
-                b->disponibilidad[1] = 1;
-              }else b->disponibilidad[1] = 0;
-              printf("%d ", b->disponibilidad[1]);
+                vector[j].disponibilidad[1] = 1;
+              }else vector[j].disponibilidad[1] = 0;
+              printf("%d ", vector[j].disponibilidad[1]);
 
             }
             if(i==4){
               aux = get_csv_field(linea,i);
               if(aux[0] == 'S'){
-                b->disponibilidad[2] = 1;
-              }else b->disponibilidad[2] = 0;
+                vector[j].disponibilidad[2] = 1;
+              }else vector[j].disponibilidad[2] = 0;
              
-              printf("%d ", b->disponibilidad[2]);
+              printf("%d ", vector[j].disponibilidad[2]);
 
             }
             if(i==5){
               aux = get_csv_field(linea,i);
               if(aux[0] == 'S'){
-                b->disponibilidad[3] = 1;
-              }else b->disponibilidad[3] = 0;
+                vector[j].disponibilidad[3] = 1;
+              }else vector[j].disponibilidad[3] = 0;
              
-              printf("%d ", b->disponibilidad[3]);
+              printf("%d ", vector[j].disponibilidad[3]);
 
             }
             if(i==6){
               aux = get_csv_field(linea,i);
               if(aux[0] == 'S'){
-                b->disponibilidad[4] = 1;
-              }else b->disponibilidad[4] = 0;
+                vector[j].disponibilidad[4] = 1;
+              }else vector[j].disponibilidad[4] = 0;
 
-              printf("%d ", b->disponibilidad[4]);
+              printf("%d ", vector[j].disponibilidad[4]);
              
             }
             if(i==7){
               aux = get_csv_field(linea,i);
               if(aux[0] == 'S'){
-                b->disponibilidad[5] = 1;
-              }else b->disponibilidad[5] = 0;
+                vector[j].disponibilidad[5] = 1;
+              }else vector[j].disponibilidad[5] = 0;
              
-              printf("%d ", b->disponibilidad[5]);
+              printf("%d ", vector[j].disponibilidad[5]);
 
             }
             if(i==8){
               aux = get_csv_field(linea,i);
               if(aux[0] == 'S'){
-                b->disponibilidad[6] = 1;
-              }else b->disponibilidad[6] = 0;
+                vector[j].disponibilidad[6] = 1;
+              }else vector[j].disponibilidad[6] = 0;
              
-              printf("%d ", b->disponibilidad[6]);
+              printf("%d ", vector[j].disponibilidad[6]);
 
             }
 
