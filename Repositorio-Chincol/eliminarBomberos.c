@@ -24,7 +24,7 @@ void eliminarBomberos(char *rut, Bombero *vector, unsigned long long *talla){
             i++;
         }
         if(encontrado){
-            for( n = j; n < *talla - 2; n++ ){
+            for( n = j; n < *talla - 1; n++ ){
                 for(i = 0; vector[n+1].rut[i]; i++){
                     vector[n].rut[i] = vector[n+1].rut[i];
                 }
@@ -37,7 +37,8 @@ void eliminarBomberos(char *rut, Bombero *vector, unsigned long long *talla){
                     vector[n].disponibilidad[i] = vector[n+1].disponibilidad[i];
                 }
             }
-            vector = realloc (vector, (*talla-1) * sizeof(Bombero));
+            *talla = *talla-1;
+            vector = realloc (vector, (*talla) * sizeof(Bombero));
             printf("-----------------------\n");
             printf("Bombero eliminado\n");
             printf("-----------------------\n");
