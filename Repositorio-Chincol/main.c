@@ -9,7 +9,7 @@ typedef struct{
 }Bombero;
 
 void menu(int *opcion);
-Bombero *importarBomberosDesdeUnArchivo(char *, unsigned long long *talla);
+List *importarBomberosDesdeUnArchivo(char *, unsigned long long *talla);
 void copiarCadena(Bombero *b, Bombero *vector, unsigned long long j);
 Bombero *agregarBombero(char rut[10], char *nombre, int disponibilidad[] );
 void eliminarBomberos(char *rut, Bombero *vector, unsigned long long *talla);
@@ -24,12 +24,13 @@ void mostrarTodosLosBomberosDeLaEstacion(Bombero *vector, unsigned long long tal
 int main(void){
     int opcion = 0, i = 0;
     unsigned long long talla;
+    List *list = createList();
     Bombero *vector = NULL;
     char rut[10];
 
 
 
-    vector = importarBomberosDesdeUnArchivo("bomberos.csv", &talla);
+    list = importarBomberosDesdeUnArchivo("bomberos.csv", &talla);
 
     do{
         menu(&opcion);
@@ -87,8 +88,6 @@ int main(void){
     }
 
  */   
-
-
 
 
     return 0;

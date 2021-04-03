@@ -1,40 +1,46 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+typedef struct Node Node;
+
+struct Node {
+    Bombero *datos;
+    Node * next;
+    Node * prev;
+};
+
+struct List {
+    Node * head;
+    Node * tail;
+    Node * current;
+};
+
+typedef List List;
+
 typedef struct{
     char *rut;
     char *nombre;
     int disponibilidad[7];
 }Bombero;
 
-void copiarCadena(Bombero *b, Bombero *vector, unsigned long long j){
+void copiarCadena(Bombero *b, List *list,unsigned long long j){
     unsigned long long i, tallaCadena = 0;
 
-    vector[j].rut = (char *) malloc(10 * sizeof(char) );
-    if(vector[j].rut == NULL){
-        printf("No hay suficiente espacio en la memoria\n"); exit(1);
-    }
-
-    vector[j].nombre = (char *) malloc(100 * sizeof(char) );
-    if(vector[j].nombre == NULL){
-        printf("No hay suficiente espacio en la memoria\n"); exit(1);
-    }
-
-    //Se guarda rut//
+    //se guarda rut//
     for(i = 0; b->rut[i]; i++){
-        vector[j].rut[i] = b->rut[i];
-        tallaCadena++;
+        list->head->datos->rut[i] = b->rut[i];
+        tallacadena++;
     }
 
-    vector[j].rut[tallaCadena] = '\0';
+    list->head->rut[tallaCadena] = '\0';
     tallaCadena = 0;
 
     //Se guarda nombre//
     for(i = 0; b->nombre[i]; i++){
-        vector[j].nombre[i] = b->nombre[i];
+        list->head->datos->nombre[i] = b->nombre[i];
         tallaCadena++;
     }
 
-    vector[j].nombre[tallaCadena] = '\0'; 
+    list->head->datos->nombre[tallaCadena] = '\0'; 
     return;
 }
